@@ -4,8 +4,9 @@
 32679 -> 6
 */
 
-Console.Write("Введите число: ");
-string str = Console.ReadLine();
-int n = str.Length;
-if (n < 3)  Console.Write("Третьей цифры нет");
-else Console.Write($"Третья цифра числа {(str)} равна {(str[2])}" );
+int randomNumber = new Random().Next(100, 10000);
+System.Console.WriteLine(randomNumber);
+string inputNumber = Convert.ToString(randomNumber);
+
+if (inputNumber.Length < 3)  Console.Write("Третьей цифры нет");
+else Console.Write($"Третья цифра числа {(inputNumber)} равна {(inputNumber[2])}" );
